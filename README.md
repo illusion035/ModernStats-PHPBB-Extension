@@ -80,5 +80,5 @@ Discord **illusion034** for **bugs / issues / suggestions**.
 ---
 
 ## 🖼️ Screenshots  
-![Screenshot_1](https://github.com/user-attachments/assets/85958020-33b5-42c9-b985-40cdd08fcf19)
-![Screenshot_2](https://github.com/user-attachments/assets/2d1b5ef3-3cf5-42a7-b081-b11029a81a9c)
+![Screenshot_1](https://github.com/user-attachments/assets/d47209d2-e286-49e1-8dea-7856d45c3182)
+![Screenshot_3](https://github.com/user-attachments/assets/0644e560-e5b6-4e80-b7e1-4d736af9a360)
