@@ -1,0 +1,14 @@
+services:
+  illusion.modernstats.listener:
+    class: illusion\modernstats\event\main_listener
+    arguments:
+      - "@language"
+      - "@template"
+      - "@dbal.conn"
+      - "@user"
+      - "%core.root_path%"
+      - "%core.php_ext%"
+      - "@auth"
+      - "@config"
+    tags:
+      - { name: event.listener }
