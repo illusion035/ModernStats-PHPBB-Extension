@@ -81,7 +81,7 @@ function phpbb_get_user_avatar($row)
             $avatar_img = generate_board_url() . '/images/avatars/gallery/' . $row['user_avatar'];
             break;
         case 'avatar.driver.gravatar':
-            $avatar_img = 'https://secure.gravatar.com/avatar/' . md5(strtolower(trim($row['user_email']))) . '?s=' . $avatar_width;
+            $avatar_img = 'https://secure.gravatar.com/avatar/' . hash('md5', strtolower(trim($row['user_email']))) . '?s=' . $avatar_width;
             break;
     }
 

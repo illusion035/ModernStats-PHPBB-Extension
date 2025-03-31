@@ -1,6 +1,22 @@
 <?php
+/**
+ *
+ * Modern Statistics Extension
+ *
+ * @copyright (c) 2024 Illusion
+ * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
+ *
+ */
 
-class ModernStatsListener
+namespace illusion\modernstats\event;
+
+if (!defined('IN_PHPBB')) {
+    exit;
+}
+
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+
+class ModernStatsListener implements EventSubscriberInterface
 {
     static public function getSubscribedEvents()
     {
