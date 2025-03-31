@@ -75,7 +75,7 @@ In **ACP → Extensions → Modern Statistics → Settings**, you can configure:
 ---
 
 ## 🛠️ Support  
-Please post in the topic for **bugs / issues / suggestions**.
+Discord **illusion034** for **bugs / issues / suggestions**.
 
 ---
 
