@@ -3,7 +3,7 @@
   "type": "phpbb-extension",
   "description": "Modern Statistics Extension for phpBB",
   "homepage": "",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "time": "2025-03-31",
   "license": "GPL-2.0-only",
   "authors": [
