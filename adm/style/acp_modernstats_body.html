@@ -3,171 +3,126 @@
 <h1>{L_ACP_MODERNSTATS_TITLE}</h1>
 
 <form id="acp_board" method="post" action="{U_ACTION}">
-  <fieldset>
-    <legend>{L_ACP_MODERNSTATS_SETTINGS}</legend>
+	<fieldset>
+		<legend>{L_ACP_MODERNSTATS_SETTINGS}</legend>
 
-    <dl>
-      <dt>
-        <label for="modernstats_display_location"
-          >{L_ACP_MODERNSTATS_DISPLAY_LOCATION}:</label
-        ></dt>
-      <dd>
-        <select name="modernstats_display_location" id="modernstats_display_location">
-          <option value="after_forumlist"<!-- IF MODERNSTATS_DISPLAY_LOCATION == 'after_forumlist' --> selected="selected"<!-- ENDIF -->>{L_ACP_MODERNSTATS_LOCATION_AFTER_FORUMLIST}</option>
-          <option value="before_markforums"<!-- IF MODERNSTATS_DISPLAY_LOCATION == 'before_markforums' --> selected="selected"<!-- ENDIF -->>{L_ACP_MODERNSTATS_LOCATION_BEFORE_MARKFORUMS}</option>
-          <option value="after_markforums"<!-- IF MODERNSTATS_DISPLAY_LOCATION == 'after_markforums' --> selected="selected"<!-- ENDIF -->>{L_ACP_MODERNSTATS_LOCATION_AFTER_MARKFORUMS}</option>
-        </select>
-      </dd>
-    </dl>
+		<dl>
+			<dt>
+				<label for="modernstats_theme">{L_ACP_MODERNSTATS_THEME}{L_COLON}</label><br />
+				<span>{L_ACP_MODERNSTATS_THEME_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<select name="modernstats_theme" id="modernstats_theme">
+					<option value="light"<!-- IF MODERNSTATS_THEME == 'light' --> selected="selected"<!-- ENDIF -->>{L_ACP_MODERNSTATS_THEME_LIGHT}</option>
+					<option value="dark"<!-- IF MODERNSTATS_THEME == 'dark' --> selected="selected"<!-- ENDIF -->>{L_ACP_MODERNSTATS_THEME_DARK}</option>
+				</select>
+			</dd>
+		</dl>
 
-    <dl>
-      <dt>
-        <label for="modernstats_show_statistics"
-          >{L_ACP_MODERNSTATS_SHOW_STATISTICS}:</label
-        ><br />
-        <span>{L_ACP_MODERNSTATS_SHOW_STATISTICS_EXPLAIN}</span>
-      </dt>
-      <dd>
-        <label
-          ><input
-            type="radio"
-            class="radio"
-            name="modernstats_show_statistics"
-            value="1"
-            <!-- IF MODERNSTATS_SHOW_STATISTICS --> checked="checked"<!-- ENDIF -->
-          />
-          {L_YES}</label
-        >
-        <label
-          ><input
-            type="radio"
-            class="radio"
-            name="modernstats_show_statistics"
-            value="0"
-            <!-- IF not MODERNSTATS_SHOW_STATISTICS --> checked="checked"<!-- ENDIF -->
-          />
-          {L_NO}</label
-        >
-      </dd>
-    </dl>
+		<dl>
+			<dt>
+				<label for="modernstats_display_location">{L_ACP_MODERNSTATS_DISPLAY_LOCATION}{L_COLON}</label>
+			</dt>
+			<dd>
+				<select name="modernstats_display_location" id="modernstats_display_location">
+					<option value="after_forumlist"<!-- IF MODERNSTATS_DISPLAY_LOCATION == 'after_forumlist' --> selected="selected"<!-- ENDIF -->>{L_ACP_MODERNSTATS_LOCATION_AFTER_FORUMLIST}</option>
+					<option value="before_markforums"<!-- IF MODERNSTATS_DISPLAY_LOCATION == 'before_markforums' --> selected="selected"<!-- ENDIF -->>{L_ACP_MODERNSTATS_LOCATION_BEFORE_MARKFORUMS}</option>
+					<option value="after_markforums"<!-- IF MODERNSTATS_DISPLAY_LOCATION == 'after_markforums' --> selected="selected"<!-- ENDIF -->>{L_ACP_MODERNSTATS_LOCATION_AFTER_MARKFORUMS}</option>
+				</select>
+			</dd>
+		</dl>
 
-    <dl>
-      <dt>
-        <label for="modernstats_show_latest_posts"
-          >{L_ACP_MODERNSTATS_SHOW_LATEST_POSTS}:</label
-        ><br />
-        <span>{L_ACP_MODERNSTATS_SHOW_LATEST_POSTS_EXPLAIN}</span>
-      </dt>
-      <dd>
-        <label
-          ><input
-            type="radio"
-            class="radio"
-            name="modernstats_show_latest_posts"
-            value="1"
-            <!-- IF MODERNSTATS_SHOW_LATEST_POSTS --> checked="checked"<!-- ENDIF -->
-          />
-          {L_YES}</label
-        >
-        <label
-          ><input
-            type="radio"
-            class="radio"
-            name="modernstats_show_latest_posts"
-            value="0"
-            <!-- IF not MODERNSTATS_SHOW_LATEST_POSTS --> checked="checked"<!-- ENDIF -->
-          />
-          {L_NO}</label
-        >
-      </dd>
-    </dl>
+		<dl>
+			<dt>
+				<label for="modernstats_show_statistics">{L_ACP_MODERNSTATS_SHOW_STATISTICS}{L_COLON}</label><br />
+				<span>{L_ACP_MODERNSTATS_SHOW_STATISTICS_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<label>
+					<input type="radio" class="radio" name="modernstats_show_statistics" value="1"<!-- IF MODERNSTATS_SHOW_STATISTICS --> checked="checked"<!-- ENDIF --> />
+					{L_YES}
+				</label>
+				<label>
+					<input type="radio" class="radio" name="modernstats_show_statistics" value="0"<!-- IF not MODERNSTATS_SHOW_STATISTICS --> checked="checked"<!-- ENDIF --> />
+					{L_NO}
+				</label>
+			</dd>
+		</dl>
 
-    <dl>
-      <dt>
-        <label for="modernstats_latest_posts_limit"
-          >{L_ACP_MODERNSTATS_LATEST_POSTS_LIMIT}:</label
-        ><br />
-        <span>{L_ACP_MODERNSTATS_LATEST_POSTS_LIMIT_EXPLAIN}</span>
-      </dt>
-      <dd>
-        <input
-          type="number"
-          id="modernstats_latest_posts_limit"
-          name="modernstats_latest_posts_limit"
-          value="{MODERNSTATS_LATEST_POSTS_LIMIT}"
-          min="1"
-          max="50"
-        />
-      </dd>
-    </dl>
+		<dl>
+			<dt>
+				<label for="modernstats_excluded_groups">{L_ACP_MODERNSTATS_EXCLUDED_GROUPS}{L_COLON}</label><br />
+				<span>{L_ACP_MODERNSTATS_EXCLUDED_GROUPS_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<select name="modernstats_excluded_groups[]" id="modernstats_excluded_groups" multiple="multiple" size="8" style="min-width: 200px;">
+					<!-- BEGIN groups -->
+					<option value="{groups.GROUP_ID}"<!-- IF groups.S_SELECTED --> selected="selected"<!-- ENDIF -->>{groups.GROUP_NAME}</option>
+					<!-- END groups -->
+				</select>
+			</dd>
+		</dl>
 
-    <dl>
-      <dt>
-        <label for="modernstats_show_latest_users"
-          >{L_ACP_MODERNSTATS_SHOW_LATEST_USERS}:</label
-        ><br />
-        <span>{L_ACP_MODERNSTATS_SHOW_LATEST_USERS_EXPLAIN}</span>
-      </dt>
-      <dd>
-        <label
-          ><input
-            type="radio"
-            class="radio"
-            name="modernstats_show_latest_users"
-            value="1"
-            <!-- IF MODERNSTATS_SHOW_LATEST_USERS --> checked="checked"<!-- ENDIF -->
-          />
-          {L_YES}</label
-        >
-        <label
-          ><input
-            type="radio"
-            class="radio"
-            name="modernstats_show_latest_users"
-            value="0"
-            <!-- IF not MODERNSTATS_SHOW_LATEST_USERS --> checked="checked"<!-- ENDIF -->
-          />
-          {L_NO}</label
-        >
-      </dd>
-    </dl>
+		<dl>
+			<dt>
+				<label for="modernstats_show_latest_posts">{L_ACP_MODERNSTATS_SHOW_LATEST_POSTS}{L_COLON}</label><br />
+				<span>{L_ACP_MODERNSTATS_SHOW_LATEST_POSTS_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<label>
+					<input type="radio" class="radio" name="modernstats_show_latest_posts" value="1"<!-- IF MODERNSTATS_SHOW_LATEST_POSTS --> checked="checked"<!-- ENDIF --> />
+					{L_YES}
+				</label>
+				<label>
+					<input type="radio" class="radio" name="modernstats_show_latest_posts" value="0"<!-- IF not MODERNSTATS_SHOW_LATEST_POSTS --> checked="checked"<!-- ENDIF --> />
+					{L_NO}
+				</label>
+			</dd>
+		</dl>
 
-    <dl>
-      <dt>
-        <label for="modernstats_latest_users_limit"
-          >{L_ACP_MODERNSTATS_LATEST_USERS_LIMIT}:</label
-        ><br />
-        <span>{L_ACP_MODERNSTATS_LATEST_USERS_LIMIT_EXPLAIN}</span>
-      </dt>
-      <dd>
-        <input
-          type="number"
-          id="modernstats_latest_users_limit"
-          name="modernstats_latest_users_limit"
-          value="{MODERNSTATS_LATEST_USERS_LIMIT}"
-          min="1"
-          max="50"
-        />
-      </dd>
-    </dl>
-  </fieldset>
+		<dl>
+			<dt>
+				<label for="modernstats_latest_posts_limit">{L_ACP_MODERNSTATS_LATEST_POSTS_LIMIT}{L_COLON}</label><br />
+				<span>{L_ACP_MODERNSTATS_LATEST_POSTS_LIMIT_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<input type="number" id="modernstats_latest_posts_limit" name="modernstats_latest_posts_limit" value="{MODERNSTATS_LATEST_POSTS_LIMIT}" min="1" max="50" />
+			</dd>
+		</dl>
 
-  <fieldset class="submit-buttons">
-    <input
-      class="button1"
-      type="submit"
-      id="submit"
-      name="submit"
-      value="{L_SUBMIT}"
-    />&nbsp;
-    <input
-      class="button2"
-      type="reset"
-      id="reset"
-      name="reset"
-      value="{L_RESET}"
-    />&nbsp; {S_FORM_TOKEN}
-  </fieldset>
+		<dl>
+			<dt>
+				<label for="modernstats_show_latest_users">{L_ACP_MODERNSTATS_SHOW_LATEST_USERS}{L_COLON}</label><br />
+				<span>{L_ACP_MODERNSTATS_SHOW_LATEST_USERS_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<label>
+					<input type="radio" class="radio" name="modernstats_show_latest_users" value="1"<!-- IF MODERNSTATS_SHOW_LATEST_USERS --> checked="checked"<!-- ENDIF --> />
+					{L_YES}
+				</label>
+				<label>
+					<input type="radio" class="radio" name="modernstats_show_latest_users" value="0"<!-- IF not MODERNSTATS_SHOW_LATEST_USERS --> checked="checked"<!-- ENDIF --> />
+					{L_NO}
+				</label>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt>
+				<label for="modernstats_latest_users_limit">{L_ACP_MODERNSTATS_LATEST_USERS_LIMIT}{L_COLON}</label><br />
+				<span>{L_ACP_MODERNSTATS_LATEST_USERS_LIMIT_EXPLAIN}</span>
+			</dt>
+			<dd>
+				<input type="number" id="modernstats_latest_users_limit" name="modernstats_latest_users_limit" value="{MODERNSTATS_LATEST_USERS_LIMIT}" min="1" max="50" />
+			</dd>
+		</dl>
+	</fieldset>
+
+	<fieldset class="submit-buttons">
+		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />&nbsp;
+		{S_FORM_TOKEN}
+	</fieldset>
 </form>
 
 <!-- INCLUDE overall_footer.html -->

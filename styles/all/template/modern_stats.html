@@ -1,149 +1,133 @@
 <!-- IF S_MODERNSTATS_ENABLED -->
-<div class="modern-stats-wrapper">
-  <!-- IF S_SHOW_STATISTICS -->
-  <div class="modern-stats-container">
-    <div class="modern-stats-item" data-color="#4CAF50">
-      <i class="bi bi-people-fill"></i>
-      <div class="stats-info">
-        <div class="stats-number">{MODERN_STATS_TOTAL_MEMBERS}</div>
-        <div class="stats-label">{L_MODERN_STATS_TOTAL_MEMBERS}</div>
-      </div>
-    </div>
-    <div class="modern-stats-item" data-color="#2196F3">
-      <i class="bi bi-chat-square-text-fill"></i>
-      <div class="stats-info">
-        <div class="stats-number">{MODERN_STATS_TOTAL_TOPICS}</div>
-        <div class="stats-label">{L_MODERN_STATS_TOTAL_TOPICS}</div>
-      </div>
-    </div>
-    <div class="modern-stats-item" data-color="#9C27B0">
-      <i class="bi bi-file-text-fill"></i>
-      <div class="stats-info">
-        <div class="stats-number">{MODERN_STATS_TOTAL_POSTS}</div>
-        <div class="stats-label">{L_MODERN_STATS_TOTAL_POSTS}</div>
-      </div>
-    </div>
-    <div class="modern-stats-item" data-color="#FF9800">
-      <i class="bi bi-trophy-fill"></i>
-      <div class="stats-info">
-        <div class="stats-number">{MODERN_STATS_TOP_POSTER}</div>
-        <div class="stats-label">{L_MODERN_STATS_TOP_POSTER}</div>
-        <div class="stats-sublabel">
-          {MODERN_STATS_TOP_POSTS} {L_MODERN_STATS_POSTS}
-        </div>
-      </div>
-    </div>
-    <div class="modern-stats-item" data-color="#E91E63">
-      <i class="bi bi-eye-fill"></i>
-      <div class="stats-info">
-        <div class="stats-number">{MODERN_STATS_TOTAL_VIEWS}</div>
-        <div class="stats-label">{L_MODERN_STATS_TOTAL_VIEWS}</div>
-      </div>
-    </div>
-    <div class="modern-stats-item" data-color="#00BCD4">
-      <i class="bi bi-person-plus-fill"></i>
-      <div class="stats-info">
-        <div class="stats-number">{MODERN_STATS_NEWEST_USER}</div>
-        <div class="stats-label">{L_MODERN_STATS_NEWEST_USER}</div>
-      </div>
-    </div>
-    <div class="modern-stats-item" data-color="#FF5722">
-      <i class="bi bi-bar-chart-fill"></i>
-      <div class="stats-info">
-        <div class="stats-number">{MODERN_STATS_POSTS_PER_DAY}</div>
-        <div class="stats-label">{L_MODERN_STATS_POSTS_PER_DAY}</div>
-      </div>
-    </div>
-    <div class="modern-stats-item" data-color="#8BC34A">
-      <i class="bi bi-person-video3"></i>
-      <div class="stats-info">
-        <div class="stats-number">{MODERN_STATS_ACTIVE_PERCENTAGE}%</div>
-        <div class="stats-label">{L_MODERN_STATS_ACTIVE_USERS_24H}</div>
-      </div>
-    </div>
-  </div>
-  <!-- ENDIF -->
+<div class="modern-stats-wrapper {MODERNSTATS_THEME_CLASS}">
+	<!-- IF S_SHOW_STATISTICS -->
+	<div class="modern-stats-container">
+		<div class="modern-stats-item" data-color="#4CAF50">
+			<i class="bi bi-people-fill"></i>
+			<div class="stats-info">
+				<div class="stats-number">{MODERN_STATS_TOTAL_MEMBERS}</div>
+				<div class="stats-label">{L_MODERN_STATS_TOTAL_MEMBERS}</div>
+			</div>
+		</div>
+		<div class="modern-stats-item" data-color="#2196F3">
+			<i class="bi bi-chat-square-text-fill"></i>
+			<div class="stats-info">
+				<div class="stats-number">{MODERN_STATS_TOTAL_TOPICS}</div>
+				<div class="stats-label">{L_MODERN_STATS_TOTAL_TOPICS}</div>
+			</div>
+		</div>
+		<div class="modern-stats-item" data-color="#9C27B0">
+			<i class="bi bi-file-text-fill"></i>
+			<div class="stats-info">
+				<div class="stats-number">{MODERN_STATS_TOTAL_POSTS}</div>
+				<div class="stats-label">{L_MODERN_STATS_TOTAL_POSTS}</div>
+			</div>
+		</div>
+		<div class="modern-stats-item" data-color="#FF9800">
+			<i class="bi bi-trophy-fill"></i>
+			<div class="stats-info">
+				<div class="stats-number">{MODERN_STATS_TOP_POSTER}</div>
+				<div class="stats-label">{L_MODERN_STATS_TOP_POSTER}</div>
+				<div class="stats-sublabel">{MODERN_STATS_TOP_POSTS} {L_MODERN_STATS_POSTS}</div>
+			</div>
+		</div>
+		<div class="modern-stats-item" data-color="#E91E63">
+			<i class="bi bi-eye-fill"></i>
+			<div class="stats-info">
+				<div class="stats-number">{MODERN_STATS_TOTAL_VIEWS}</div>
+				<div class="stats-label">{L_MODERN_STATS_TOTAL_VIEWS}</div>
+			</div>
+		</div>
+		<div class="modern-stats-item" data-color="#00BCD4">
+			<i class="bi bi-person-plus-fill"></i>
+			<div class="stats-info">
+				<div class="stats-number">{MODERN_STATS_NEWEST_USER}</div>
+				<div class="stats-label">{L_MODERN_STATS_NEWEST_USER}</div>
+			</div>
+		</div>
+		<div class="modern-stats-item" data-color="#FF5722">
+			<i class="bi bi-bar-chart-fill"></i>
+			<div class="stats-info">
+				<div class="stats-number">{MODERN_STATS_POSTS_PER_DAY}</div>
+				<div class="stats-label">{L_MODERN_STATS_POSTS_PER_DAY}</div>
+			</div>
+		</div>
+		<div class="modern-stats-item" data-color="#8BC34A">
+			<i class="bi bi-activity"></i>
+			<div class="stats-info">
+				<div class="stats-number">{MODERN_STATS_ACTIVE_PERCENTAGE}%</div>
+				<div class="stats-label">{L_MODERN_STATS_ACTIVE_USERS_24H}</div>
+			</div>
+		</div>
+	</div>
+	<!-- ENDIF -->
 
-  <!-- IF S_SHOW_LATEST_POSTS or S_SHOW_LATEST_USERS -->
-  <div class="modern-stats-tables">
-    <!-- IF S_SHOW_LATEST_POSTS -->
-    <div class="modern-stats-table-wrapper">
-      <h3 class="table-title">
-        <i class="bi bi-chat-text-fill"></i> {L_MODERN_STATS_LATEST_POSTS}
-      </h3>
-      <div class="modern-stats-table">
-        <!-- BEGIN latest_posts -->
-        <a href="{latest_posts.U_LAST_POST}" class="table-row">
-          <!-- IF latest_posts.AVATAR -->
-          {latest_posts.AVATAR}
-          <!-- ELSE -->
-          <img
-            src="{T_THEME_PATH}/images/no_avatar.gif"
-            alt="{latest_posts.USERNAME}"
-            class="user-avatar"
-          />
-          <!-- ENDIF -->
-          <div class="post-content">
-            <div class="modernstats-post-title">
-              <!-- IF latest_posts.S_TOPIC_LOCKED -->
-              <i
-                class="bi bi-lock-fill topic-locked"
-                title="{L_TOPIC_LOCKED}"
-              ></i>
-              <!-- ENDIF -->
-              <span>{latest_posts.TOPIC_TITLE}</span>
-            </div>
-            <div class="post-meta">
-              <span><i class="bi bi-clock"></i> {latest_posts.POST_TIME}</span>
-              <span
-                ><i class="bi bi-folder2-open"></i>
-                {latest_posts.FORUM_NAME}</span
-              >
-            </div>
-          </div>
-          <div class="post-author">{latest_posts.USERNAME}</div>
-        </a>
-        <!-- END latest_posts -->
-      </div>
-    </div>
-    <!-- ENDIF -->
+	<!-- IF S_SHOW_LATEST_POSTS or S_SHOW_LATEST_USERS -->
+	<div class="modern-stats-tables">
+		<!-- IF S_SHOW_LATEST_POSTS -->
+		<div class="modern-stats-table-wrapper">
+			<h3 class="table-title">
+				<i class="bi bi-lightning-charge-fill"></i>
+				<span>{L_MODERN_STATS_LATEST_POSTS}</span>
+			</h3>
+			<div class="modern-stats-table">
+				<!-- BEGIN latest_posts -->
+				<a href="{latest_posts.U_LAST_POST}" class="table-row">
+					<!-- IF latest_posts.AVATAR -->
+					{latest_posts.AVATAR}
+					<!-- ELSE -->
+					<img src="{T_THEME_PATH}/images/no_avatar.gif" alt="{latest_posts.USERNAME}" class="user-avatar" />
+					<!-- ENDIF -->
+					<div class="post-content">
+						<div class="post-title">
+							<!-- IF latest_posts.S_TOPIC_LOCKED -->
+							<i class="bi bi-lock-fill topic-locked" title="{L_TOPIC_LOCKED}"></i>
+							<!-- ENDIF -->
+							<span>{latest_posts.TOPIC_TITLE}</span>
+						</div>
+						<div class="post-meta">
+							<span><i class="bi bi-clock"></i> {latest_posts.POST_TIME}</span>
+							<span><i class="bi bi-folder2-open"></i> {latest_posts.FORUM_NAME}</span>
+						</div>
+					</div>
+					<div class="post-author">{latest_posts.USERNAME}</div>
+				</a>
+				<!-- END latest_posts -->
+			</div>
+		</div>
+		<!-- ENDIF -->
 
-    <!-- IF S_SHOW_LATEST_USERS -->
-    <div class="modern-stats-table-wrapper">
-      <h3 class="table-title">
-        <i class="bi bi-people-fill"></i> {L_MODERN_STATS_LATEST_USERS}
-      </h3>
-      <div class="modern-stats-table">
-        <!-- BEGIN latest_users -->
-        <div class="table-row">
-          <div class="user-info">
-            <!-- IF latest_users.AVATAR -->
-            {latest_users.AVATAR}
-            <!-- ELSE -->
-            <img
-              src="{T_THEME_PATH}/images/no_avatar.gif"
-              alt="{latest_users.USERNAME}"
-              class="user-avatar"
-            />
-            <!-- ENDIF -->
-            <div>
-              <div class="modernstats-username">
-                <a href="{latest_users.U_PROFILE}">{latest_users.USERNAME}</a>
-              </div>
-              <div class="user-meta">
-                <span><i class="bi bi-clock"></i> {latest_users.JOINED}</span>
-                <span
-                  ><i class="bi bi-chat-dots"></i> {latest_users.POSTS}</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END latest_users -->
-      </div>
-    </div>
-    <!-- ENDIF -->
-  </div>
-  <!-- ENDIF -->
+		<!-- IF S_SHOW_LATEST_USERS -->
+		<div class="modern-stats-table-wrapper">
+			<h3 class="table-title">
+				<i class="bi bi-stars"></i>
+				<span>{L_MODERN_STATS_LATEST_USERS}</span>
+			</h3>
+			<div class="modern-stats-table">
+				<!-- BEGIN latest_users -->
+				<div class="table-row">
+					<div class="user-info">
+						<!-- IF latest_users.AVATAR -->
+						{latest_users.AVATAR}
+						<!-- ELSE -->
+						<img src="{T_THEME_PATH}/images/no_avatar.gif" alt="{latest_users.USERNAME}" class="user-avatar" />
+						<!-- ENDIF -->
+						<div>
+							<div class="modernstats-username">
+								<a href="{latest_users.U_PROFILE}">{latest_users.USERNAME}</a>
+							</div>
+							<div class="user-meta">
+								<span><i class="bi bi-calendar-event"></i> {latest_users.JOINED}</span>
+								<span><i class="bi bi-chat-dots-fill"></i> {latest_users.POSTS}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END latest_users -->
+			</div>
+		</div>
+		<!-- ENDIF -->
+	</div>
+	<!-- ENDIF -->
 </div>
 <!-- ENDIF -->

@@ -1,4 +1,5 @@
 <?php
+
 /**
  *
  * Modern Statistics Extension
@@ -21,6 +22,11 @@ $lang = array_merge($lang, array(
     'ACP_MODERNSTATS_SETTINGS' => 'Settings',
     'ACP_MODERNSTATS_SETTINGS_SAVED' => 'Modern Statistics settings have been saved successfully.',
 
+    'ACP_MODERNSTATS_THEME' => 'Theme',
+    'ACP_MODERNSTATS_THEME_EXPLAIN' => 'Choose the visual theme for the statistics display.',
+    'ACP_MODERNSTATS_THEME_LIGHT' => 'Light',
+    'ACP_MODERNSTATS_THEME_DARK' => 'Dark',
+
     'ACP_MODERNSTATS_SHOW_LATEST_POSTS' => 'Show latest posts',
     'ACP_MODERNSTATS_SHOW_LATEST_POSTS_EXPLAIN' => 'Enable or disable the display of latest posts section.',
 
@@ -37,7 +43,11 @@ $lang = array_merge($lang, array(
     'ACP_MODERNSTATS_SHOW_STATISTICS_EXPLAIN' => 'Enable or disable the display of general statistics section.',
 
     'ACP_MODERNSTATS_DISPLAY_LOCATION' => 'Display location',
+    'ACP_MODERNSTATS_LOCATION_BEFORE_FORUMLIST' => 'Before forum list',
     'ACP_MODERNSTATS_LOCATION_AFTER_FORUMLIST' => 'After forum list',
     'ACP_MODERNSTATS_LOCATION_BEFORE_MARKFORUMS' => 'Before mark forums',
     'ACP_MODERNSTATS_LOCATION_AFTER_MARKFORUMS' => 'After mark forums',
+
+    'ACP_MODERNSTATS_EXCLUDED_GROUPS' => 'Exclude groups from Most Active User',
+    'ACP_MODERNSTATS_EXCLUDED_GROUPS_EXPLAIN' => 'Select groups to exclude from the "Most Active User" (Top Poster) statistic. Hold Ctrl to select multiple groups.',
 ));

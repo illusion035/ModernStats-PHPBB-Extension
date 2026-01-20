@@ -1,4 +1,5 @@
 <?php
+
 /**
  *
  * Modern Statistics Extension
@@ -21,6 +22,11 @@ $lang = array_merge($lang, array(
     'ACP_MODERNSTATS_SETTINGS' => 'Настройки',
     'ACP_MODERNSTATS_SETTINGS_SAVED' => 'Настройките на Модерна статистика бяха запазени успешно.',
 
+    'ACP_MODERNSTATS_THEME' => 'Тема',
+    'ACP_MODERNSTATS_THEME_EXPLAIN' => 'Изберете визуалната тема за показване на статистиката.',
+    'ACP_MODERNSTATS_THEME_LIGHT' => 'Светла',
+    'ACP_MODERNSTATS_THEME_DARK' => 'Тъмна',
+
     'ACP_MODERNSTATS_SHOW_LATEST_POSTS' => 'Показване на последни съобщения',
     'ACP_MODERNSTATS_SHOW_LATEST_POSTS_EXPLAIN' => 'Включване или изключване на показването на секцията с последни съобщения.',
 
@@ -37,7 +43,11 @@ $lang = array_merge($lang, array(
     'ACP_MODERNSTATS_SHOW_STATISTICS_EXPLAIN' => 'Включване или изключване на показването на секцията с обща статистика.',
 
     'ACP_MODERNSTATS_DISPLAY_LOCATION' => 'Местоположение на показване',
+    'ACP_MODERNSTATS_LOCATION_BEFORE_FORUMLIST' => 'Преди списъка с форуми',
     'ACP_MODERNSTATS_LOCATION_AFTER_FORUMLIST' => 'След списъка с форуми',
     'ACP_MODERNSTATS_LOCATION_BEFORE_MARKFORUMS' => 'Преди бутона за маркиране на форуми',
     'ACP_MODERNSTATS_LOCATION_AFTER_MARKFORUMS' => 'След бутона за маркиране на форуми',
+
+    'ACP_MODERNSTATS_EXCLUDED_GROUPS' => 'Изключване на групи от Най-активен потребител',
+    'ACP_MODERNSTATS_EXCLUDED_GROUPS_EXPLAIN' => 'Изберете групи за изключване от статистиката "Най-активен потребител" (Top Poster). Задръжте Ctrl за избор на няколко групи.',
 ));

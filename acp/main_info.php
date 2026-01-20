@@ -1,9 +1,10 @@
 <?php
+
 /**
  *
  * Modern Statistics Extension
  *
- * @copyright (c) 2024 Illusion
+ * @copyright (c) 2025 Illusion
  * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
  *
  */
