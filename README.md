@@ -1,6 +1,6 @@
 <h1 align="center">📊 Modern Statistics Extension for phpBB</h1>
 
-## 🧩 Version: 1.0.0  
+## 🧩 Version: 1.1.0  
 **👤 Author:** Illusion  
 **🧷 Compatibility:** phpBB 3.2.0+
 
@@ -31,11 +31,48 @@ It displays key forum data in a visually appealing way using a modern Bootstrap-
 - 🔢 Configurable number of posts shown  
 - 🔒 Shows a lock icon for locked topics
 
-### 3. 🧑‍💻 Latest Registered Users:
+### 3. 🧑💻 Latest Registered Users:
 - 👥 Shows newly registered users  
 - 🖼️ Includes avatars  
 - 📆 Shows registration date and post count  
 - 🔧 Configurable number of users shown
+
+### 4. 🎨 Theme Support:
+- 🌙 Dark Theme  
+- ☀️ Light Theme  
+- 🔧 Configurable in ACP
+
+### 5. 🚫 Group Exclusion for Most Active User:
+- 🛡️ Exclude specific groups from "Most Active User" statistic  
+- 👮 Perfect for excluding Administrators, Moderators, or Bots  
+- ✅ Multi-select interface in ACP
+
+---
+
+## 🆕 What's New in v1.1.0
+
+### ✨ New Features:
+- **🚫 Group Exclusion**: Exclude specific user groups from "Most Active User" (Top Poster) statistic
+- **🎨 Theme Selection**: Choose between Light and Dark themes from ACP
+
+### ⚡ Performance Improvements:
+- **🚀 Optimized Database Queries**: Reduced 5 database queries by using phpBB's built-in config values
+- Uses `num_users`, `num_topics`, `num_posts`, `newest_username`, `board_startdate` from phpBB config
+- **~50-75ms faster page load** according to user reports
+
+### 🐛 Bug Fixes:
+- Fixed: Blue bar remaining when all features are disabled (`S_MODERNSTATS_ENABLED` now properly checks if any feature is enabled)
+- Fixed: PHP warnings for "Trying to access array offset on bool" when no top poster exists
+- Fixed: Avatar display using phpBB's native `phpbb_get_avatar()` function with proper key mapping
+- Fixed: Undefined constant errors by using global namespace prefix for phpBB constants
+
+### 📝 Code Quality (phpBB Validation):
+- Removed unused `listener.php` file
+- Removed custom phpBB constant redefinitions
+- Moved custom avatar function to class method
+- Fixed HTML formatting in templates
+- Using `{L_COLON}` instead of hardcoded colons
+- Following phpBB coding guidelines (tabs, bracket placement)
 
 ---
 
@@ -48,16 +85,27 @@ It displays key forum data in a visually appealing way using a modern Bootstrap-
 
 ---
 
+## 🔄 Upgrade from v1.0.0
+
+1. **Disable** the extension in ACP → Customise → Manage extensions
+2. Replace the files in `ext/illusion/modernstats/` with the new version
+3. **Enable** the extension again (new migration will run automatically)
+4. Configure the new settings in ACP → Extensions → Modern Statistics
+
+---
+
 ## 🔧 Configuration
 
 In **ACP → Extensions → Modern Statistics → Settings**, you can configure:
 
-- 🧭 Display location of the statistics block  
-- ✅ Enable/disable general statistics section  
-- 🗨️ Enable/disable latest posts  
-- 🔢 Number of latest posts to show (1-50)  
-- 👤 Enable/disable latest users  
-- 🔢 Number of latest users to show (1-50)
+- 🎨 **Theme**: Choose between Light and Dark themes
+- 🧭 **Display location** of the statistics block  
+- ✅ **Enable/disable** general statistics section
+- 🚫 **Exclude groups** from Most Active User statistic (NEW!)
+- 🗨️ **Enable/disable** latest posts  
+- 🔢 **Number of latest posts** to show (1-50)  
+- 👤 **Enable/disable** latest users  
+- 🔢 **Number of latest users** to show (1-50)
 
 ---
 
@@ -70,12 +118,31 @@ In **ACP → Extensions → Modern Statistics → Settings**, you can configure:
 ## 📎 Requirements
 
 - 🧩 phpBB 3.2.0 or later  
-- 🐘 PHP 5.4 or later
+- 🐘 PHP 7.1 or later
 
 ---
 
 ## 🛠️ Support  
 Discord **illusion034** for **bugs / issues / suggestions**.
+
+---
+
+## 📜 Changelog
+
+### v1.1.0 (2026-01-20)
+- ✨ Added: Group exclusion for Most Active User
+- ✨ Added: Light/Dark theme selection
+- ⚡ Improved: Performance optimization (5 fewer DB queries)
+- 🐛 Fixed: S_MODERNSTATS_ENABLED logic
+- 🐛 Fixed: Avatar display issues
+- 🐛 Fixed: PHP warnings when no top poster exists
+- 📝 Improved: Code quality for phpBB validation
+
+### v1.0.0 (Initial Release)
+- 📊 General statistics display
+- 🕒 Latest posts section
+- 🧑💻 Latest users section
+- 🌍 English and Bulgarian translations
 
 ---
 
